@@ -1,53 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zorynth Labs</title>
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      background: #050505;
-      color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 80px 20px;
+      color: #f5f5f5;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(120,120,120,0.18), transparent 35%),
+        linear-gradient(180deg, #030303, #0b0b0b);
+      min-height: 100vh;
     }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      letter-spacing: 4px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 13px;
+    }
+
+    .hero {
+      padding: 110px 8% 80px;
+      max-width: 1100px;
+    }
+
+    .label {
+      color: #888;
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
     h1 {
-      font-size: 52px;
-      letter-spacing: 6px;
-      margin-bottom: 10px;
+      font-size: clamp(48px, 8vw, 98px);
+      line-height: 0.95;
+      margin: 22px 0;
+      letter-spacing: -3px;
     }
-    p {
-      color: #b8b8b8;
-      font-size: 18px;
+
+    .glow {
+      color: #fff;
+      text-shadow: 0 0 30px rgba(255,255,255,0.25);
+    }
+
+    .hero p {
       max-width: 650px;
-      margin: 20px auto;
+      color: #b8b8b8;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 36px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+    }
+
+    .card {
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.035);
+      border-radius: 22px;
+      padding: 28px;
+      min-height: 190px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #aaa;
       line-height: 1.6;
     }
-    .tagline {
-      color: #ffffff;
-      font-size: 22px;
-      margin-top: 30px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 14px 26px;
-      border: 1px solid white;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      letter-spacing: 2px;
+
+    footer {
+      padding: 40px 8%;
+      color: #777;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
-  <h1>ZORYNTH LABS</h1>
-  <p class="tagline">Creative intelligence for digital worlds.</p>
-  <p>
-    Zorynth Labs is an experimental AI creative technology studio focused on
-    digital art systems, game-ready assets, generative design, and the future of
-    visual creation.
-  </p>
-  <a class="button" href="mailto:zorynthlabs@gmail.com">CONTACT</a>
+
+  <nav>
+    <div class="logo">ZORYNTH LABS</div>
+    <div class="nav-links">
+      <a href="#vision">Vision</a>
+      <a href="#projects">Projects</a>
+      <a href="mailto:zorynthlabs@gmail.com">Contact</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="label">Experimental AI Creative Systems</div>
+    <h1>Building tools for the next era of digital creation.</h1>
+    <p>
+      Zorynth Labs is a creative technology lab exploring artificial intelligence,
+      generative art systems, digital assets, and worldbuilding tools for creators,
+      studios, and future interactive media.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#projects">Explore Projects</a>
+      <a class="btn secondary" href="https://instagram.com/zorynthlabs">Instagram</a>
+    </div>
+  </main>
+
+  <section id="vision">
+    <div class="label">Vision</div>
+    <h2>Clean technology. Powerful creativity.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI Art Systems</h3>
+        <p>Researching workflows for consistent, high-quality visual generation.</p>
+      </div>
+      <div class="card">
+        <h3>Game Assets</h3>
+        <p>Designing future-ready tools for sprites, textures, icons, and digital worlds.</p>
+      </div>
+      <div class="card">
+        <h3>Creative Automation</h3>
+        <p>Building systems that help creators produce faster without losing identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="label">Internal Projects</div>
+    <h2>Early concepts under development.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Zorynth Core</h3>
+        <p>A foundation for future AI-assisted creative production pipelines.</p>
+      </div>
+      <div class="card">
+        <h3>Project Atlas</h3>
+        <p>A visual asset system for worldbuilding, games, and digital environments.</p>
+      </div>
+      <div class="card">
+        <h3>Genesis Engine</h3>
+        <p>An experimental concept for generating cohesive art collections.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Zorynth Labs. Experimental creative technology.
+  </footer>
+
 </body>
 </html>
