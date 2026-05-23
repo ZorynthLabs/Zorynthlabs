@@ -19,10 +19,18 @@
     
     nav {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      gap: 18px;
       padding: 28px 8%;
       border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
     .logo {
@@ -34,7 +42,6 @@
     .nav-links a {
       color: #d0d0d0;
       text-decoration: none;
-      margin-left: 12px;
       font-size: 13px;
       border: 1px solid rgba(255,255,255,0.15);
       padding: 10px 18px;
