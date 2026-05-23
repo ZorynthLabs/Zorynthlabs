@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zorynth Labs — Portfolio</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #f5f5f5;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(120,120,120,0.18), transparent 35%),
+        linear-gradient(180deg, #030303, #0b0b0b);
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      letter-spacing: 4px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      color: #d0d0d0;
+      text-decoration: none;
+      font-size: 13px;
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 10px 18px;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.35);
+      color: white;
+    }
+
+    .hero {
+      padding: 50px 8% 50px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .logo-image {
+      width: 180px;
+      margin: 0 auto 28px auto;
+      display: block;
+      opacity: 0.96;
+    }
+
+    .label {
+      color: #888;
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 1.05;
+      margin: 22px 0;
+      letter-spacing: -3px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #b8b8b8;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      padding: 40px 8% 90px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .portfolio-card {
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.25s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .portfolio-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #111;
+    }
+
+    .portfolio-content {
+      padding: 24px;
+    }
+
+    .portfolio-content h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .portfolio-content p {
+      color: #aaa;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    footer {
+      padding: 40px 8%;
+      color: #777;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .hero {
+        padding-top: 30px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">ZORYNTH LABS</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="mailto:zorynthlabs@gmail.com">Contact</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+
+    <img src="Zorynth_Labs__3_-removebg-preview.png"
+    alt="Zorynth Labs Logo"
+    class="logo-image">
+
+    <div class="label">Portfolio</div>
+
+    <h1>Selected creative systems and experimental concepts.</h1>
+
+    <p>
+      A collection of visual experiments, artificial intelligence workflows,
+      digital systems, and future-facing creative concepts developed under
+      Zorynth Labs.
+    </p>
+
+  </main>
+
+  <section class="portfolio-grid">
+
+    <div class="portfolio-card">
+
+      <img class="portfolio-image"
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="portfolio-content">
+        <h3>Zorynth Core</h3>
+
+        <p>
+          Experimental AI-assisted visual generation systems designed for
+          scalable creative workflows and digital asset production.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="portfolio-card">
+
+      <img class="portfolio-image"
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="portfolio-content">
+        <h3>Project Atlas</h3>
+
+        <p>
+          A conceptual framework exploring worldbuilding pipelines,
+          procedural design systems, and future interactive environments.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="portfolio-card">
+
+      <img class="portfolio-image"
+      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="portfolio-content">
+        <h3>Genesis Engine</h3>
+
+        <p>
+          A future-oriented experimental concept focused on cohesive visual
+          identity generation and AI-driven artistic consistency.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Zorynth Labs. Experimental creative technology.
+  </footer>
+
+</body>
+</html>
